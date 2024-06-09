@@ -1,0 +1,32 @@
+/* main */
+main {
+    margin: clamp(10px, 5%, 50px);
+}
+
+/* about me section */
+#about-me {
+    display: flex;
+
+}
+
+#about-me-photo {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* project grid */
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-column-gap: 50px;
+}
+
+.project-grid-item {
+    max-width: 280px;
+    min-width: 200px;
+}
+
+.project-screenshot-photo {
+    max-width: 280px;
+    min-width: 200px;
+}
