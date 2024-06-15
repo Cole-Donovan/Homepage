@@ -1,32 +1,195 @@
+/* https://palettes.shecodes.io/palettes/1496#palette */
+
+body {
+    margin: 0;
+}
+
 /* main */
 main {
-    margin: clamp(10px, 5%, 50px);
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    font-weight: normal;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 /* about me section */
 #about-me {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #77529e;
+    padding-left: clamp(10px, 5%, 50px);
+    padding-right: clamp(10px, 5%, 50px);
+    padding-top: clamp(10px, 5%, 50px);
+    padding-bottom: clamp(30px, 5%, 50px);;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
 
+#about-photo-container {
+    flex: 1 1 350px;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding: 0;
 }
 
 #about-me-photo {
-    max-width: 500px;
-    max-height: 500px;
+    width: 100%;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+.about-photo-text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+.about-photo-text > h1 {
+    font-size: 2.5em;
+}
+
+#about-me-text {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 1 1 240px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+.about-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.about-button-container > button {
+    width: 35px;
+    margin-left: 20px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
 }
 
 /* project grid */
+#grid-title {
+    padding-top: 40px;
+    padding-left: clamp(10px, 5%, 50px);
+    padding-right: clamp(10px, 5%, 50px);
+}
+
 #project-grid {
+    padding-bottom: 100px;
+    padding-left: clamp(10px, 5%, 50px);
+    padding-right: clamp(10px, 5%, 50px);
+
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    grid-column-gap: 50px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 42px;
 }
 
 .project-grid-item {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     max-width: 280px;
-    min-width: 200px;
 }
 
 .project-screenshot-photo {
     max-width: 280px;
-    min-width: 200px;
+}
+
+.project-title-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title-links > h2 {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.project-title-links > div > button {
+    width: 25px;
+    padding: 0;
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+.project-description {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #a5bdfd;
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;    font-weight: normal;
+    font-weight: normal;
+    padding: clamp(10px, 5%, 50px);
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+#footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+#contact-image-container {
+    flex: 1 1 400px;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+#contact-image {
+    width: 100%;
+}
+
+.contact-info {
+    padding: 10px;
+    flex: 1 1 240px;
+}
+.contact-logo-container {
+    display: flex;
+    height: 32px;
+    align-items: center;
+}
+
+.contact-logo-container > button {
+    width: 25px;
+    padding: 0;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.contact-button-container {
+    display: flex;
+    margin-top: 20px;
+}
+.contact-button-container > button {
+    width: 40px;
+    padding: 0px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
 }
