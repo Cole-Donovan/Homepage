@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+button {
+    transition-duration: 0.5s;
+}
+button:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
 /* main */
 main {
     font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
@@ -105,6 +113,12 @@ h2 {
 .project-grid-item {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     max-width: 280px;
+    transition-duration: 0.5s;
+}
+
+.project-grid-item:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.05);
 }
 
 .project-screenshot-photo {
@@ -157,7 +171,7 @@ footer {
 #contact-image-container {
     flex: 1 1 400px;
     max-width: 500px;
-    min-width: 400px;
+    min-width: 100px;
 }
 
 #contact-image {
@@ -174,7 +188,7 @@ footer {
     align-items: center;
 }
 
-.contact-logo-container > button {
+.contact-logo-container > img {
     width: 25px;
     padding: 0;
     margin-right: 10px;
